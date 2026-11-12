@@ -1,0 +1,15 @@
+{{ with site.GetPage "/talks" }}
+{{ $talks := slice }}
+{{ range .RegularPages }}{{ $talks = $talks | append (dict "d" ((time.AsTime (.Params.event_date | default .Date)).Format "2006-01-02") "p" .) }}{{ end }}
+{{ if $talks }}
+<section id="talks" class="py-12 bg-bg dark:bg-bg border-t border-border-primary" data-animate>
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    {{ partial "home/heading.html" (dict "title" "Talks & Posters" "intro" "Conferences where I have presented, or will present, my work.") }}
+    <div class="grid gap-6">
+      {{ range first 3 (sort $talks "d" "desc") }}{{ partial "talk-card.html" .p }}{{ end }}
+    </div>
+    {{ partial "home/more.html" (dict "url" "/talks/" "label" "All talks, slides and posters") }}
+  </div>
+</section>
+{{ end }}
+{{ end }}

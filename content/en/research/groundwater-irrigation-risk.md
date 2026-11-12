@@ -3,6 +3,8 @@ title: "Forecasting Groundwater Irrigation Risk under Salinity–Sodicity Stress
 date: 2026-03-01
 description: "A tabular, spatial and ordinal learning framework for forecasting groundwater irrigation risk."
 tags: ["environment", "groundwater", "data-fusion", "forecasting"]
+authors: "**M. Asghari Ilani**, S. Mokhtar Tehran, A. Kavei, M. Banad, H. Eskandari"
+journal: "Journal of Environmental Management (2026)"
 ---
 
 **Authors:** **M. Asghari Ilani**, S. Mokhtar Tehran, A. Kavei, M. Banad, H. Eskandari

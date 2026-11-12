@@ -1,0 +1,28 @@
+{{ with site.GetPage "/blog" }}
+{{ if .RegularPages }}
+<section id="blog" class="py-12 bg-bg dark:bg-bg border-t border-border-primary" data-animate>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {{ partial "home/heading.html" (dict "title" "Blog & News" "intro" "News, achievements and notes on my research.") }}
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {{ range first 3 .RegularPages.ByDate.Reverse }}
+      <a href="{{ .RelPermalink }}" class="block group">
+        <article class="bg-bg-secondary dark:bg-bg-tertiary rounded-xl shadow-md hover:shadow-xl h-full border border-border-primary overflow-hidden transition-shadow duration-200">
+          {{ with .Params.featured_image }}
+          <img src="{{ . }}" alt="{{ $.Title }}" class="w-full h-56 object-cover object-top" loading="lazy">
+          {{ else }}
+          <div class="h-56 bg-gradient-primary-lighter flex items-center justify-center"><i class="fas fa-newspaper text-4xl text-primary"></i></div>
+          {{ end }}
+          <div class="p-6">
+            <time class="text-sm text-text-secondary dark:text-text-secondary" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+            <h3 class="text-lg font-semibold mt-1 mb-2 text-text-primary dark:text-text-primary group-hover:text-primary dark:group-hover:text-primary-light transition-colors duration-200">{{ .Title }}</h3>
+            {{ with .Description }}<p class="text-sm text-text-secondary dark:text-text-secondary leading-relaxed">{{ . }}</p>{{ end }}
+          </div>
+        </article>
+      </a>
+      {{ end }}
+    </div>
+    {{ partial "home/more.html" (dict "url" "/blog/" "label" "All posts") }}
+  </div>
+</section>
+{{ end }}
+{{ end }}

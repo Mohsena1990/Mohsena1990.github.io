@@ -3,6 +3,8 @@ title: "Comparative Study of LSTM, Bidirectional LSTM, and Traditional Machine L
 date: 2025-01-01
 description: "A comparison of LSTM, bidirectional LSTM and traditional machine learning for predicting energy consumption."
 tags: ["energy", "forecasting", "deep-learning", "time-series"]
+authors: "H. Alizadegan, R. Rashidi, **M. Asghari Ilani**, M. Banad"
+journal: "Energy Exploration & Exploitation 43(1), 281–301 (2025)"
 ---
 
 **Authors:** H. Alizadegan, R. Rashidi, **M. Asghari Ilani**, M. Banad

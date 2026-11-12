@@ -27,7 +27,7 @@ quickfacts:
     value: "🎓 <a href=\"https://www.swansea.ac.uk\" target=\"_blank\" rel=\"noopener noreferrer\">Swansea University</a>, **PhD** (WGSSS DTP, Management and Business pathway)<br>🎓 <a href=\"https://www.swansea.ac.uk\" target=\"_blank\" rel=\"noopener noreferrer\">Swansea University</a>, **MSc in Social Research** (Distinction)<br>⚙️ <a href=\"https://ut.ac.ir/en\" target=\"_blank\" rel=\"noopener noreferrer\">University of Tehran</a>, **MSc in Mechanical Engineering**<br>⚙️ <a href=\"https://ut.ac.ir/en\" target=\"_blank\" rel=\"noopener noreferrer\">University of Tehran</a>, **BSc in Mechanical Engineering**"
   - icon: "award"
     title: "Recent Achievement"
-    value: "🏆 **1st Place**, RoboCup 2025 Rescue Agent Simulation League (Brazil)"
+    value: "🏆 <a href=\"/blog/robocup-2025-first-place/\"><strong>1st Place</strong>, RoboCup 2025 Rescue Simulation League, Agent Competition</a> (Team Timrad, Salvador, Brazil)"
   - icon: "book"
     title: "Publications"
     value: "📄 Peer-reviewed work in *Risk Analysis*, *Journal of Environmental Management*, *Energy and AI*, *Scientific Reports* and *IEEE GRSL*"

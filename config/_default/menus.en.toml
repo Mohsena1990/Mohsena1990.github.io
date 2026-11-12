@@ -1,45 +1,45 @@
+# Menu order matches the order of sections on the home page.
 [[main]]
 name = "About"
 url = "/#about"
-weight = 2
-
-[[main]]
-name = "Skills"
-url = "/#skills"
-weight = 3
+weight = 1
 
 [[main]]
 name = "Experience"
 url = "/#experience"
+weight = 2
+
+[[main]]
+name = "Research"
+url = "/#research"
+weight = 3
+
+[[main]]
+name = "Talks"
+url = "/#talks"
 weight = 4
 
 [[main]]
-name = "Contact"
-url = "/#contact"
+name = "Projects"
+url = "/#projects"
 weight = 5
+
+[[main]]
+name = "Skills"
+url = "/#skills"
+weight = 6
 
 [[main]]
 name = "Tech Stack"
 url = "/#technical"
-weight = 4.5
+weight = 7
 
 [[main]]
 name = "Blog"
-url = "/blog/"
-weight = 60
+url = "/#blog"
+weight = 8
 
 [[main]]
-name = "Research"
-url = "/research/"
-weight = 50
-
-
-[[main]]
-name = "Talks"
-url = "/talks/"
-weight = 52
-
-[[main]]
-name = "Projects"
-url = "/projects/"
-weight = 54
+name = "Contact"
+url = "/#contact"
+weight = 9

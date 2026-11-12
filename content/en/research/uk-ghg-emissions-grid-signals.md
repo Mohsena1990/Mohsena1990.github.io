@@ -3,6 +3,8 @@ title: "Do Electricity-Grid Signals Improve Quarterly Forecasts of UK Greenhouse
 date: 2026-02-01
 description: "A layered audit of whether electricity-grid signals genuinely improve machine-learning forecasts of UK emissions."
 tags: ["emissions", "energy", "forecasting", "model-evaluation"]
+authors: "**M. Asghari Ilani**, H. Eskandari, Y. M. Banad"
+journal: "Energy and AI (2026)"
 ---
 
 **Authors:** **M. Asghari Ilani**, H. Eskandari, Y. M. Banad

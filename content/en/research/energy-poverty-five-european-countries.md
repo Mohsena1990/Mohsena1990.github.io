@@ -3,6 +3,8 @@ title: "Household, Regional and Climate Information in Identifying Energy Povert
 date: 2026-07-01
 description: "Machine-learning evidence on how household, regional and climate information help identify energy poverty in five European countries."
 tags: ["energy-poverty", "energy", "europe", "machine-learning", "climate"]
+authors: "**M. Asghari Ilani**, M. Banad, H. Eskandari"
+journal: "Journal of Environmental Management (2026)"
 ---
 
 **Authors:** **M. Asghari Ilani**, M. Banad, H. Eskandari

@@ -3,6 +3,8 @@ title: "T1-Weighted MRI-Based Brain Tumor Classification Using Hybrid Deep Learn
 date: 2025-01-08
 description: "Hybrid deep learning models for classifying brain tumours from T1-weighted MRI scans."
 tags: ["deep-learning", "medical-imaging", "computer-vision"]
+authors: "**M. Asghari Ilani**, D. Shi, Y. M. Banad"
+journal: "Scientific Reports 15(1), 1010 (2025)"
 ---
 
 **Authors:** **M. Asghari Ilani**, D. Shi, Y. M. Banad

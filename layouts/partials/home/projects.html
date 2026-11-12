@@ -1,0 +1,22 @@
+{{ with site.GetPage "/projects" }}
+{{ if .RegularPages }}
+<section id="projects" class="py-12 bg-bg-secondary dark:bg-bg-secondary border-t border-border-primary" data-animate>
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    {{ partial "home/heading.html" (dict "title" "Projects" "intro" "Current and upcoming research projects.") }}
+    <div class="grid gap-6 md:grid-cols-2">
+      {{ range first 4 .RegularPages.ByWeight }}
+      <article class="bg-bg dark:bg-bg-tertiary rounded-xl p-6 shadow-md border border-border-primary flex flex-col">
+        <div class="mb-3">{{ partial "project-meta.html" . }}</div>
+        <h3 class="text-xl font-semibold mb-2 text-text-primary dark:text-text-primary">
+          {{ if .Content }}<a href="{{ .RelPermalink }}" class="hover:text-primary dark:hover:text-primary-light transition-colors duration-300">{{ .Title }}</a>{{ else }}{{ .Title }}{{ end }}
+        </h3>
+        {{ with .Description }}<p class="text-text-secondary dark:text-text-secondary leading-relaxed mb-4">{{ . }}</p>{{ end }}
+        <div class="mt-auto">{{ partial "project-links.html" . }}</div>
+      </article>
+      {{ end }}
+    </div>
+    {{ partial "home/more.html" (dict "url" "/projects/" "label" "All projects") }}
+  </div>
+</section>
+{{ end }}
+{{ end }}

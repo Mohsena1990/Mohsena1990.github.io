@@ -3,6 +3,8 @@ title: "Enhanced HS-SNet: Improved SAR Image Flood Segmentation with Learnable H
 date: 2025-01-02
 description: "Improved flood segmentation in SAR satellite imagery using learnable histogram layers and an active contour model."
 tags: ["deep-learning", "remote-sensing", "flood-mapping", "computer-vision"]
+authors: "M. Asadi, S. Saeidi, M. Kordani, **M. Asghari Ilani**, Y. M. Banad"
+journal: "IEEE Geoscience and Remote Sensing Letters 22, 1–5 (2025)"
 ---
 
 **Authors:** M. Asadi, S. Saeidi, M. Kordani, **M. Asghari Ilani**, Y. M. Banad

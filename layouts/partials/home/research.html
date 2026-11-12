@@ -1,0 +1,22 @@
+{{ with site.GetPage "/research" }}
+<section id="research" class="py-12 bg-bg-secondary dark:bg-bg-secondary border-t border-border-primary" data-animate>
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    {{ partial "home/heading.html" (dict "title" "Research & Publications" "intro" "Machine learning for socio-economic, energy, environmental and medical risk.") }}
+    <ol class="space-y-4">
+      {{ range .RegularPages.ByDate.Reverse }}
+      <li>
+        <a href="{{ .RelPermalink }}" class="group flex gap-4 items-start bg-bg dark:bg-bg-tertiary rounded-xl p-5 shadow-sm border border-border-primary hover:shadow-md transition-shadow duration-200">
+          <span class="flex-shrink-0 w-14 text-center bg-gradient-primary text-white rounded-lg py-1 text-sm font-semibold">{{ .Date.Format "2006" }}</span>
+          <span class="flex-1 min-w-0">
+            <span class="block font-semibold text-text-primary dark:text-text-primary group-hover:text-primary dark:group-hover:text-primary-light transition-colors duration-200">{{ .Title }}</span>
+            {{ with .Params.authors }}<span class="block text-sm text-text-secondary dark:text-text-secondary mt-1">{{ . | markdownify }}</span>{{ end }}
+            {{ with .Params.journal }}<span class="block text-sm italic text-primary dark:text-primary-light mt-1">{{ . }}</span>{{ end }}
+          </span>
+        </a>
+      </li>
+      {{ end }}
+    </ol>
+    {{ partial "home/more.html" (dict "url" "/research/" "label" "Research themes and all papers") }}
+  </div>
+</section>
+{{ end }}
