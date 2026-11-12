@@ -1,7 +1,7 @@
 ---
 title: "À propos"
 type: "homepage"
-featured_image: "/images/felipe-cordero-profile.jpg"
+featured_image: "/images/mohsen-asghari-ilani-profile.jpg"
 intro: >-
   **Directeur de la technologie en IA**. Je porte la direction technique et la livraison d'agents LLM sécurisés et conformes. J'ai commencé en **ingénierie structurelle** au Chili, puis **logiciel et automatisation** dans la construction et le BIM, puis **IA/ML et produits LLM**. Aujourd'hui je suis **Directeur de la technologie** chez <a href="https://fireraven.ai" target="_blank" rel="noopener noreferrer"><strong>Fireraven</strong></a>, à la tête de **FireGuard** et **RedRaven** : architecture, roadmap et livraison hands-on de guardrails de politiques, enforcement runtime et red teaming pour une adoption entreprise sûre. J'ai piloté des travaux complexes et multidisciplinaires de la R&D à la livraison, dont la **Bourse d'excellence académique** (Air Canada, Collège LaSalle Montréal, 2025) en études IA/ML.
 

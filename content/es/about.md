@@ -1,7 +1,7 @@
 ---
 title: "Sobre mí"
 type: "homepage"
-featured_image: "/images/felipe-cordero-profile.jpg"
+featured_image: "/images/mohsen-asghari-ilani-profile.jpg"
 intro: >-
   **Head of Technology en IA**. Dirijo la tecnología y la entrega de agentes LLM seguros y conformes. Empecé en **ingeniería estructural** en Chile, pasé al **software y la automatización** en construcción y BIM, y luego a **IA/ML y productos basados en LLM**. Hoy soy **Head of Technology** en <a href="https://fireraven.ai" target="_blank" rel="noopener noreferrer"><strong>Fireraven</strong></a>, liderando **FireGuard** y **RedRaven**: arquitectura, roadmap y entrega hands-on de guardrails de políticas, enforcement en runtime y red teaming para que las empresas adopten agentes con seguridad. He liderado trabajo complejo y multidisciplinario de I+D a entrega, incluida la **Beca de Excelencia Académica** (Air Canada, Collège LaSalle Montréal, 2025) en estudios de IA/ML.
 

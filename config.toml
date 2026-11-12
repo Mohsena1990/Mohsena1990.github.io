@@ -1,10 +1,12 @@
 # Hugo Site Configuration
-baseURL = "https://felipecordero.com"
-languageCode = "en-us"
-title = "Felipe Cordero"
+baseURL = "https://mohsena1990.github.io/mohsen.asghari.ilani.github.io/"
+languageCode = "en-gb"
+title = "Mohsen Asghari Ilani"
 theme = "careercanvas"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
+# Spanish and French versions are switched off for now (content still exists in content/es and content/fr)
+disableLanguages = ["es", "fr"]
 
 [languages]
   [languages.en]
@@ -12,78 +14,55 @@ defaultContentLanguageInSubdir = false
     languageName = "English"
     weight = 1
     [languages.en.params]
-      tagline = "Head of Technology at Fireraven. Securing every AI agent."
-      hero_description = "Head of Technology at Fireraven: hands-on tech leadership for FireGuard and RedRaven, with real-time policy enforcement, red-teaming, and auditor-ready compliance for LLM agents. I bridge CEO and product vision with AI systems engineering so enterprises can adopt agents safely and at scale."
-      hero_location = "Montréal, Canada"
-      resume_url = "/files/Felipe_Cordero_CV_ENG.pdf"
+      tagline = "PhD Researcher at Swansea University. Machine learning for socio-economic, energy and environmental risk."
+      hero_description = "ESRC/UKRI-funded PhD researcher at Swansea University and Senior Data Scientist at Dotin. I build and deploy machine learning models for socio-economic, energy and environmental risk, from early warning of household fuel vulnerability to deep learning for medical and satellite imaging, with peer-reviewed work in Risk Analysis, Scientific Reports and IEEE Geoscience and Remote Sensing Letters."
+      hero_location = "Cardiff, United Kingdom"
+      resume_url = "/files/Mohsen_Asghari_Ilani_CV.pdf"
       collab_tags = [
-        "Tech leadership & architecture",
-        "AI agent security & compliance",
-        "FireGuard & policy guardrails",
-        "Full-stack AI (Python / Next.js)",
-        "Enterprise AI adoption"
+        "Machine learning for risk",
+        "Energy & fuel vulnerability",
+        "Time-series forecasting",
+        "Deep learning & computer vision",
+        "Environmental data science"
       ]
   [languages.es]
     contentDir = "content/es"
     languageName = "Español"
     weight = 2
-    [languages.es.params]
-      tagline = "Head of Technology en Fireraven. Asegurando cada agente de IA."
-      hero_description = "Head of Technology en Fireraven: liderazgo técnico hands-on de FireGuard y RedRaven, con enforcement de políticas en tiempo real, red teaming y cumplimiento listo para auditoría para agentes LLM. Conecto la visión del CEO y del producto con la ingeniería de sistemas de IA para una adopción empresarial segura y a escala."
-      hero_location = "Montreal, Canadá"
-      resume_url = "/files/Felipe_Cordero_CV_ENG.pdf"
-      collab_tags = [
-        "Liderazgo técnico y arquitectura",
-        "Seguridad y cumplimiento de agentes IA",
-        "FireGuard y guardrails de políticas",
-        "IA full stack (Python / Next.js)",
-        "Adopción de IA empresarial"
-      ]
   [languages.fr]
     contentDir = "content/fr"
     languageName = "Français"
     weight = 3
-    [languages.fr.params]
-      tagline = "Directeur de la technologie chez Fireraven. Sécuriser chaque agent IA."
-      hero_description = "Directeur de la technologie chez Fireraven : leadership technique hands-on pour FireGuard et RedRaven, avec enforcement de politiques en temps réel, red teaming et conformité prête pour l'audit pour agents LLM. Je relie la vision du CEO et du produit à l'ingénierie des systèmes IA pour une adoption entreprise sûre et à l'échelle."
-      hero_location = "Montréal, Canada"
-      resume_url = "/files/Felipe_Cordero_CV_FRE.pdf"
-      collab_tags = [
-        "Leadership tech et architecture",
-        "Sécurité et conformité des agents IA",
-        "FireGuard et guardrails de politiques",
-        "IA full stack (Python / Next.js)",
-        "Adoption de l'IA en entreprise"
-      ]
 
 [build]
   writeStats = true
 
 [params]
-name = "Felipe Cordero"
-firstName = "Felipe"
-lastName = "Cordero"
-email = "mail@felipecordero.com"
-profile_image = "/images/felipe-cordero-profile.jpg"
-author = "Felipe Cordero"
+name = "Mohsen Asghari Ilani"
+firstName = "Mohsen"
+lastName = "Asghari Ilani"
+email = "ilani.a.m1990@gmail.com"
+profile_image = "/images/mohsen-asghari-ilani-profile.jpg"
+author = "Mohsen Asghari Ilani"
 
-og_image = "images/felipecordero-og.png"
+# Social preview image shown when the site is shared
+og_image = "images/mohsen-asghari-ilani-profile.jpg"
 
-description = "Head of Technology at Fireraven. Hands-on tech leadership for FireGuard and RedRaven: guardrails, security, and compliance for LLM agents, bridging product vision with AI systems engineering."
+description = "Mohsen Asghari Ilani: PhD researcher at Swansea University (ESRC/UKRI) and Senior Data Scientist at Dotin, working on machine learning for socio-economic, energy and environmental risk."
 
-linkedin_url = "https://www.linkedin.com/in/felipe-cordero-osorio"
-linkedin_text = "linkedin.com/in/felipe-cordero-osorio"
-github_url = "https://github.com/felipecordero"
-github_text = "github.com/felipecordero"
+linkedin_url = "https://www.linkedin.com/in/mohsen-asghari-ilani"
+linkedin_text = "linkedin.com/in/mohsen-asghari-ilani"
+github_url = "https://github.com/Mohsena1990"
+github_text = "github.com/Mohsena1990"
 
-calendly_url = "https://calendly.com/correofelipecordero/30min"
+# Booking link removed (was Felipe's Calendly); add your own later if you want one
+calendly_url = ""
 calendly_height = "700px"
 
-copyright = "Felipe Cordero"
+copyright = "Mohsen Asghari Ilani"
 
-
-resume_url_en = "/files/Felipe_Cordero_CV_ENG.pdf"
-resume_url_fr = "/files/Felipe_Cordero_CV_FRE.pdf"
+resume_url_en = "/files/Mohsen_Asghari_Ilani_CV.pdf"
+resume_url_fr = "/files/Mohsen_Asghari_Ilani_CV.pdf"
 resume_label = "View CV"
 
 # Form and Pexels: set in config or config.local.toml. CI: HUGO_PARAMS_FORMSPREEENDPOINT, HUGO_PARAMS_PEXELSAPIKEY (no underscores)
@@ -92,11 +71,11 @@ pexelsapikey = ""
 
 [[params.social]]
 icon = "linkedin-in"
-url = "https://www.linkedin.com/in/felipe-cordero-osorio/"
+url = "https://www.linkedin.com/in/mohsen-asghari-ilani/"
 
 [[params.social]]
 icon = "github"
-url = "https://github.com/felipecordero"
+url = "https://github.com/Mohsena1990"
 
 sectionPagesMenu = 'main'
 
