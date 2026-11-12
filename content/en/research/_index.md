@@ -9,7 +9,7 @@ My research applies **machine learning to questions of risk**: who becomes vulne
 
 ### Research themes
 
-- **Energy and fuel vulnerability**: early warning of household vulnerability risk in the UK
+- **Energy poverty and fuel vulnerability**: household, regional and climate drivers of energy poverty across five European countries, and early warning of fuel vulnerability for UK households
 - **Emissions and energy forecasting**: greenhouse-gas emissions, electricity-grid signals and energy consumption
 - **Environmental risk**: groundwater irrigation risk under salinity–sodicity stress
 - **Deep learning for imaging**: MRI brain tumour classification and SAR flood segmentation

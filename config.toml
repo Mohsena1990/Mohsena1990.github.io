@@ -14,12 +14,12 @@ enableRobotsTXT = true
     weight = 1
     [languages.en.params]
       tagline = "PhD Researcher at Swansea University. Machine learning for socio-economic, energy and environmental risk."
-      hero_description = "ESRC/UKRI-funded PhD researcher at Swansea University and Senior Data Scientist at Dotin. I build and deploy machine learning models for socio-economic, energy and environmental risk, from early warning of household fuel vulnerability to deep learning for medical and satellite imaging, with peer-reviewed work in Risk Analysis, Scientific Reports and IEEE Geoscience and Remote Sensing Letters."
+      hero_description = "ESRC/UKRI-funded PhD researcher at Swansea University (WGSSS DTP, Management and Business pathway). I build machine learning models for socio-economic, energy and environmental risk, from energy poverty and early warning of household fuel vulnerability to market price forecasting, computer vision and NLP, with peer-reviewed work in Risk Analysis, Journal of Environmental Management, Scientific Reports and IEEE Geoscience and Remote Sensing Letters."
       hero_location = "Cardiff, United Kingdom"
       resume_url = "/files/Mohsen_Asghari_Ilani_CV.pdf"
       collab_tags = [
         "Machine learning for risk",
-        "Energy & fuel vulnerability",
+        "Energy poverty & fuel vulnerability",
         "Time-series forecasting",
         "Deep learning & computer vision",
         "Environmental data science"
@@ -39,7 +39,7 @@ author = "Mohsen Asghari Ilani"
 # Social preview image shown when the site is shared
 og_image = "images/mohsen-asghari-ilani-profile.jpg"
 
-description = "Mohsen Asghari Ilani: PhD researcher at Swansea University (ESRC/UKRI) and Senior Data Scientist at Dotin, working on machine learning for socio-economic, energy and environmental risk."
+description = "Mohsen Asghari Ilani: ESRC/UKRI-funded PhD researcher at Swansea University, working on machine learning for socio-economic, energy and environmental risk, including energy poverty and household fuel vulnerability."
 
 linkedin_url = "https://www.linkedin.com/in/mohsen-asghari-ilani"
 linkedin_text = "linkedin.com/in/mohsen-asghari-ilani"
@@ -61,8 +61,8 @@ og_image_height = 800
 google_site_verification = "XYhisYGovLt6JwWnd4hcwC5N80ip4aSAP9vi1q4K59k"
 
 [params.seo]
-  jobTitle = "PhD Researcher and Senior Data Scientist"
-  knowsAbout = ["Machine learning", "Data science", "Fuel poverty", "Energy vulnerability", "Time-series forecasting", "Deep learning", "Environmental risk", "Social research"]
+  jobTitle = "PhD Researcher"
+  knowsAbout = ["Machine learning", "Data science", "Energy poverty", "Fuel poverty", "Energy vulnerability", "Market price forecasting", "Natural language processing", "Computer vision", "Time-series forecasting", "Deep learning", "Environmental risk", "Social research"]
   # Profiles that are you; add Google Scholar and ORCID links here when you have them
   sameAs = [
     "https://www.linkedin.com/in/mohsen-asghari-ilani",

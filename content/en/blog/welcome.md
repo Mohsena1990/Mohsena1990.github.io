@@ -6,9 +6,9 @@ description: "A short introduction to who I am, what I research, and what you wi
 tags: ["news", "research"]
 ---
 
-Welcome! I'm **Mohsen Asghari Ilani**, a PhD researcher at **Swansea University**, funded by **ESRC/UKRI** through the Wales Graduate School for the Social Sciences, and a Senior Data Scientist at **Dotin**.
+Welcome! I'm **Mohsen Asghari Ilani**, a PhD researcher at **Swansea University**, funded by **ESRC/UKRI** through the Wales Graduate School for the Social Sciences, on the WGSSS Doctoral Training Partnership (Management and Business pathway). Before that, I worked as a Senior Data Scientist at **Dotin**.
 
-My work uses **machine learning to understand and forecast risk**: which households become fuel vulnerable and when, whether electricity-grid signals really improve emissions forecasts, how salinity and climate shape groundwater irrigation risk, and how deep learning can support medical and satellite imaging.
+My work uses **machine learning to understand and forecast risk**: what household, regional and climate information reveals about energy poverty across Europe, which households become fuel vulnerable and when, whether electricity-grid signals really improve emissions forecasts, how salinity and climate shape groundwater irrigation risk, and how deep learning can support medical and satellite imaging.
 
 ## What you'll find here
 

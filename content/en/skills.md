@@ -7,7 +7,7 @@ intro: >-
 domains:
   - icon: "brain"
     title: "Machine Learning & Deep Learning"
-    description: "Deep learning, computer vision and natural language processing: hybrid CNN models for MRI brain tumour classification, SAR image flood segmentation, and LSTM/BiLSTM models for energy prediction."
+    description: "Deep learning, computer vision and natural language processing: market price forecasting, hybrid CNN models for MRI brain tumour classification, SAR image flood segmentation, and LSTM/BiLSTM models for energy prediction."
     devicon_class: "devicon-pytorch-original colored"
 
   - icon: "chart-line"
@@ -27,7 +27,7 @@ domains:
 
   - icon: "cogs"
     title: "Engineering Background"
-    description: "BSc and MSc in Mechanical Engineering and three years of R&D at Iran Khodro, bringing a systems view of how models and physical processes behave."
+    description: "BSc and MSc in Mechanical Engineering from the University of Tehran and three years of R&D at Iran Khodro, bringing a systems view of how models and physical processes behave."
     devicon_class: "devicon-matlab-plain colored"
 
   - icon: "robot"
