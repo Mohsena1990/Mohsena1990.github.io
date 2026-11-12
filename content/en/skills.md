@@ -2,41 +2,41 @@
 title: "Skills"
 type: "homepage"
 intro: >-
-  Tech leadership for AI agent security platforms: LLM security and compliance design, full-stack delivery, and clear collaboration across product, security, and customers.
+  Machine learning and data science for risk: forecasting, deep learning and rigorous evaluation, grounded in engineering and social research training.
 
 domains:
   - icon: "brain"
-    title: "AI & Product Engineering"
-    description: "LLM agents, prompt and policy design, guardrails, runtime enforcement, red-teaming mindset, AI security, compliance-oriented product design, and scoping with PMs and customers."
-    devicon_class: "devicon-tensorflow-original colored"
+    title: "Machine Learning & Deep Learning"
+    description: "Deep learning, computer vision and natural language processing: hybrid CNN models for MRI brain tumour classification, SAR image flood segmentation, and LSTM/BiLSTM models for energy prediction."
+    devicon_class: "devicon-pytorch-original colored"
 
-  - icon: "code"
-    title: "Full-Stack AI Engineering"
-    description: "Python, FastAPI, Next.js/TypeScript, agents and RAG patterns, PostgreSQL and Supabase, testing, observability, GCP and modern deployment: an integrated toolkit for shipping reliable features."
+  - icon: "chart-line"
+    title: "Forecasting & Early Warning"
+    description: "Time-series forecasting and early-warning systems for household fuel vulnerability, greenhouse-gas emissions, energy consumption and groundwater irrigation risk, with careful audits of apparent machine-learning gains."
     devicon_class: "devicon-python-plain colored"
 
-  - icon: "lock"
-    title: "Product & Security Thinking"
-    description: "Requirements discovery, risk framing, security controls, auditability, and working with regulatory and compliance constraints, turning them into prioritized roadmaps and shipped features."
-    devicon_class: "devicon-react-original colored"
-
-  - icon: "tools"
-    title: "Structural Engineering & AEC"
-    description: "Deep background in structural design, BIM, and construction technology, grounding product decisions in how complex physical and organizational systems actually behave."
-    devicon_class: "devicon-docker-plain colored"
+  - icon: "chart-bar"
+    title: "Statistical Modelling & Data Science"
+    description: "Statistical modelling, predictive analytics, computational modelling and algorithm design; fusing tabular, spatial and ordinal data into models that support decisions."
+    devicon_class: "devicon-r-original colored"
 
   - icon: "users"
-    title: "Collaboration & Leadership"
-    description: "Head of Technology at Fireraven: leading tech delivery for FireGuard and RedRaven; agile work with global distributed teams from discovery through release."
+    title: "Social Research Methods"
+    description: "ESRC/UKRI-funded training at Swansea University (MSc in Social Research, Distinction), connecting quantitative methods with socio-economic and policy questions."
+    devicon_class: "devicon-jupyter-plain colored"
+
+  - icon: "cogs"
+    title: "Engineering Background"
+    description: "BSc and MSc in Mechanical Engineering and three years of R&D at Iran Khodro, bringing a systems view of how models and physical processes behave."
+    devicon_class: "devicon-matlab-plain colored"
+
+  - icon: "robot"
+    title: "Multi-Agent Systems"
+    description: "1st place at RoboCup 2025 (Rescue Agent Simulation League) with agents that coordinate disaster-response simulations."
     devicon_class: "devicon-github-original colored"
 
   - icon: "globe"
-    title: "Languages & International Experience"
-    description: "Native Spanish; English (IELTS C1) and French (TCF B2) for international product and customer contexts."
-    devicon_class: "devicon-html5-plain colored"
-
-  - icon: "hands-helping"
-    title: "Community & Learning"
-    description: "Volunteer work and continuous learning, including the Academic Excellence Scholarship at Collège LaSalle Montréal."
-    devicon_class: "devicon-javascript-plain colored"
+    title: "Languages"
+    description: "Native Persian (Farsi) and professional English."
+    devicon_class: "devicon-latex-original colored"
 ---

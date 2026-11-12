@@ -2,79 +2,54 @@
 title: "Experience"
 type: "homepage"
 intro: >-
-  From structural engineering to tech leadership in AI: building tools and platforms that connect technical depth with product and business outcomes.
+  From mechanical engineering to machine learning research: building predictive models for socio-economic, energy and environmental risk, in academia and industry.
 
 resume_downloads:
   - lang: en
     label: English
-  - lang: fr
-    label: Français
 
 positions:
-  - company: "Fireraven"
-    company_url: "https://fireraven.ai"
-    period: "May 2025 - Present"
-    industry: "AI Security & Compliance"
-    location: "Montreal - Canada"
-    company_description: "FireGuard and RedRaven: real-time policy enforcement, red-teaming, and auditor-ready compliance for enterprise AI agents."
-    roles:
-      - title: "Head of Technology"
-        period: "Sept 2026 - Present"
-        bullet_points:
-          - "Own technology direction for FireGuard and RedRaven: architecture, roadmap, and delivery priorities with CEO and product."
-          - "Lead end-to-end delivery of AI agent security and compliance: policies, runtime controls, and the pentest/compliance loop."
-          - "Set the engineering bar for reliability, latency, observability, and auditor-ready evidence while staying hands-on (Python/FastAPI, Next.js/TypeScript, PostgreSQL)."
-      - title: "Full-Stack AI Product Engineer"
-        period: "May 2025 - Sept 2026"
-        bullet_points:
-          - "Own AI security and compliance features end to end with product, security, compliance, and customers."
-          - "Design and implement guardrails, policy-driven behavior, and runtime controls for LLM agents (APIs and tooling)."
-          - "Translate regulatory and risk requirements into product behavior, audit trails, and safer enterprise agent adoption."
+  - company: "Swansea University"
+    company_url: "https://www.swansea.ac.uk"
+    role: "PhD Researcher (ESRC/UKRI-funded)"
+    period: "Sep 2025 - Present"
+    industry: "Social Research & Data Science"
+    location: "Swansea - United Kingdom"
+    company_description: "Funded by the Wales Graduate School for the Social Sciences (WGSSS), ESRC and UKRI."
+    bullet_points:
+      - "Research machine learning for socio-economic, energy and environmental risk, including early warning of household fuel vulnerability in the UK."
+      - "Completed an MSc in Social Research with Distinction as part of the funded programme."
+      - "Combine quantitative social research methods with forecasting, interpretable machine learning and careful model evaluation."
 
-  - company: "ObraLink"
-    company_url: "https://obralink.com"
-    role: "Senior Software Developer"
-    period: "August 2023 - May 2025"
-    industry: "Construction Technology"
+  - company: "Dotin"
+    role: "Senior Data Scientist"
+    period: "Jul 2026 - Present"
+    industry: "Data Science & Machine Learning"
+    company_description: "Machine learning and data-driven solutions for real-world applications."
+    bullet_points:
+      - "Develop and deploy machine learning models for real-world applications."
+      - "Analyse large datasets to extract actionable insights for decision-making."
+      - "Collaborate with cross-functional teams to deliver data-driven solutions."
+
+  - company: "Independent Researcher"
+    company_key: "independent-researcher"
+    role: "Machine Learning and Socio-Economic Analytics"
+    period: "Feb 2019 - Present"
+    industry: "Research"
     location: "Remote"
-    company_description: "Innovative construction technology company developing AI-powered structural analysis tools"
+    company_description: "Peer-reviewed research in machine learning for socio-economic, energy, environmental and medical applications."
     bullet_points:
-      - "Led technical initiatives tied to product and business goals, including innovation documentation for investment conversations exceeding $500K USD."
-      - "Delivered autonomous structural analysis and ML-based concrete estimation that shortened engineering workflows and changed how teams produced deliverables."
-      - "Translated ambiguous engineering needs into architecture, implementation, and iterative releases."
+      - "Conduct research in machine learning for socio-economic, energy, environmental and medical applications."
+      - "Publish in peer-reviewed journals including Risk Analysis, Journal of Environmental Management, Energy and AI, Scientific Reports and IEEE Geoscience and Remote Sensing Letters."
+      - "Contribute to collaborative academic and industry research projects, including the team that won 1st place at RoboCup 2025 (Rescue Agent Simulation League)."
 
-  - company: "Tensacon"
-    company_url: "https://tensacon.cl"
-    role: "Technical Assistant Manager"
-    period: "March 2022 - July 2023"
-    industry: "Construction & Prefabrication"
-    location: "Chile"
-    company_description: "Specialized in prefabricated construction solutions and BIM implementation"
+  - company: "Iran Khodro Agency"
+    role: "Mechanical Engineer"
+    period: "Aug 2013 - Jul 2016"
+    industry: "Automotive Engineering"
+    location: "Iran"
+    company_description: "Automotive manufacturing and service network."
     bullet_points:
-      - "Led BIM and prefabrication delivery on major projects, including CODELCO facilities and Pan American Games venues, enhancing quality and throughput on Fast Track work."
-      - "Drove workflow automation that reduced design time by 40% on critical paths."
-      - "Connected field and design constraints to executable solutions for large prefabricated builds."
-
-  - company: "Sirve Engineering"
-    company_url: "https://sirve.cl"
-    role: "Structural Engineering Team Lead and R&D Coordinator"
-    period: "March 2019 - March 2022"
-    industry: "Structural Engineering"
-    location: "Chile"
-    company_description: "Engineering firm specializing in high-rise residential and commercial structures"
-    bullet_points:
-      - "Owned R&D for internal software tools, reducing initial engineering and structure sizing time by 75%."
-      - "Delivered multiple high-rise residential and commercial complexes (~20,000 m² each) with clear technical ownership."
-      - "Implemented parametric modeling for complex geometries, linking structural performance to delivery timelines."
-
-  - company: "Various Engineering Firms"
-    role: "Structural Engineer"
-    period: "2010 - 2018"
-    industry: "Structural Engineering"
-    location: "Chile"
-    company_description: "Multiple engineering firms focusing on seismic-resistant structures and custom solutions"
-    bullet_points:
-      - "Designed seismic-resistant structures"
-      - "Developed custom calculation tools"
-      - "Mentored junior engineers"
+      - "Contributed to research and development projects."
+      - "Worked with technical teams to deliver data-driven engineering solutions."
 ---
