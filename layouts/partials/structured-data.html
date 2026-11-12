@@ -1,0 +1,32 @@
+{{- /* Schema.org structured data so search engines understand who this site is about. */ -}}
+{{- $p := .Site.Params -}}
+{{- $person := dict
+  "@type" "Person"
+  "@id" (printf "%s#person" .Site.BaseURL)
+  "name" $p.name
+  "givenName" $p.firstname
+  "familyName" $p.lastname
+  "url" .Site.BaseURL
+  "image" (absURL $p.profile_image)
+  "jobTitle" $p.seo.jobtitle
+  "description" $p.description
+  "affiliation" (dict "@type" "CollegeOrUniversity" "name" "Swansea University" "url" "https://www.swansea.ac.uk")
+  "worksFor" (dict "@type" "Organization" "name" "Dotin")
+  "alumniOf" (slice
+      (dict "@type" "CollegeOrUniversity" "name" "Swansea University")
+      (dict "@type" "CollegeOrUniversity" "name" "University of Tehran")
+      (dict "@type" "CollegeOrUniversity" "name" "Islamic Azad University"))
+  "homeLocation" (dict "@type" "Place" "name" "Cardiff, United Kingdom")
+  "knowsAbout" $p.seo.knowsabout
+  "sameAs" $p.seo.sameas
+-}}
+{{- if .IsHome }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" (slice
+  (dict "@type" "WebSite" "@id" (printf "%s#website" .Site.BaseURL) "url" .Site.BaseURL "name" .Site.Title "publisher" (dict "@id" (printf "%s#person" .Site.BaseURL)))
+  (dict "@type" "ProfilePage" "url" .Site.BaseURL "name" .Site.Title "mainEntity" $person)
+) | jsonify | safeJS }}</script>
+{{- else if and (eq .Section "research") .IsPage }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "ScholarlyArticle" "headline" .Title "description" .Description "datePublished" (.Date.Format "2006") "url" .Permalink "author" (dict "@type" "Person" "name" $p.name "url" .Site.BaseURL) | jsonify | safeJS }}</script>
+{{- else if and (eq .Section "blog") .IsPage }}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "BlogPosting" "headline" .Title "description" .Description "datePublished" (.Date.Format "2006-01-02") "url" .Permalink "image" (absURL $p.profile_image) "author" (dict "@type" "Person" "name" $p.name "url" .Site.BaseURL) | jsonify | safeJS }}</script>
+{{- end }}

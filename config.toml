@@ -5,6 +5,7 @@ title = "Mohsen Asghari Ilani"
 theme = "careercanvas"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
 
 [languages]
   [languages.en]
@@ -50,6 +51,23 @@ calendly_url = ""
 calendly_height = "700px"
 
 copyright = "Mohsen Asghari Ilani"
+
+# --- Search engines ---
+# Short title for the home page in Google results (about 60 characters max)
+home_title = "Mohsen Asghari Ilani | PhD Researcher, Swansea University"
+og_image_width = 800
+og_image_height = 800
+# Paste the code from Google Search Console (HTML tag method) here
+google_site_verification = ""
+
+[params.seo]
+  jobTitle = "PhD Researcher and Senior Data Scientist"
+  knowsAbout = ["Machine learning", "Data science", "Fuel poverty", "Energy vulnerability", "Time-series forecasting", "Deep learning", "Environmental risk", "Social research"]
+  # Profiles that are you; add Google Scholar and ORCID links here when you have them
+  sameAs = [
+    "https://www.linkedin.com/in/mohsen-asghari-ilani",
+    "https://github.com/Mohsena1990"
+  ]
 
 resume_url_en = "/files/Mohsen_Asghari_Ilani_CV.pdf"
 resume_url_fr = ""
