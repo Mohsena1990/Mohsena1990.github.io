@@ -15,6 +15,7 @@ location: "Cardiff, United Kingdom"
 authors: "**M. Asghari Ilani**, M. Banad, H. Eskandari"   # optional
 description: "One or two sentences shown on the Talks page."
 slides: "/files/talks/my-talk-slides.pdf"         # optional PDF (shown in the page)
+slides_download: "/files/talks/my-talk-slides.pptx" # optional PowerPoint download
 # slides_embed: "https://docs.google.com/presentation/d/e/.../embed"  # optional Google Slides embed
 poster: "/files/talks/my-poster.pdf"              # optional PDF, PNG or JPG
 video: ""                                         # optional recording link
