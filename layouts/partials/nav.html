@@ -89,6 +89,11 @@
             <i class="fab fa-github text-xl"></i>
           </a>
           {{ end }}
+          {{ with .Site.Params.scholar_url }}
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+            <i class="fas fa-graduation-cap text-xl"></i>
+          </a>
+          {{ end }}
           {{ $calendlyIcon := resources.Get "images/calendly-icon.svg" }}
           {{ if and .Site.Params.calendly_url $calendlyIcon }}
           <a href="{{ .Site.Params.calendly_url }}" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125" aria-label="Book a meeting on Calendly">
@@ -183,6 +188,11 @@
         {{ if .Site.Params.github_url }}
         <a href="{{ .Site.Params.github_url }}" target="_blank" rel="noopener noreferrer" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
           <i class="fab fa-github text-2xl"></i>
+        </a>
+        {{ end }}
+        {{ with .Site.Params.scholar_url }}
+        <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar" class="text-text-primary dark:text-text-primary transition-transform duration-300 hover:scale-125">
+          <i class="fas fa-graduation-cap text-2xl"></i>
         </a>
         {{ end }}
         {{ $calendlyIcon := resources.Get "images/calendly-icon.svg" }}

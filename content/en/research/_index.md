@@ -16,4 +16,4 @@ My research applies **machine learning to questions of risk**: who becomes vulne
 
 ---
 
-*Browse the publications below, or use the tags to filter by topic. A full list is available on Google Scholar.*
+*Browse the publications below, or use the tags to filter by topic. The full list, with citations, is on my [Google Scholar profile](https://scholar.google.com/citations?user=onGT9egAAAAJ&hl=en).*

@@ -45,6 +45,10 @@ linkedin_url = "https://www.linkedin.com/in/mohsen-asghari-ilani"
 linkedin_text = "linkedin.com/in/mohsen-asghari-ilani"
 github_url = "https://github.com/Mohsena1990"
 github_text = "github.com/Mohsena1990"
+scholar_url = "https://scholar.google.com/citations?user=onGT9egAAAAJ&hl=en"
+scholar_text = "Google Scholar profile"
+# University email (shown in Contact)
+university_email = "2238065@swansea.ac.uk"
 
 # Booking link (e.g. Calendly); leave empty to hide the button
 calendly_url = ""
@@ -63,8 +67,9 @@ google_site_verification = "XYhisYGovLt6JwWnd4hcwC5N80ip4aSAP9vi1q4K59k"
 [params.seo]
   jobTitle = "PhD Researcher"
   knowsAbout = ["Machine learning", "Data science", "Energy poverty", "Fuel poverty", "Energy vulnerability", "Market price forecasting", "Natural language processing", "Computer vision", "Time-series forecasting", "Deep learning", "Environmental risk", "Social research"]
-  # Profiles that are you; add Google Scholar and ORCID links here when you have them
+  # Profiles that are you; add ORCID or ResearchGate links here when you have them
   sameAs = [
+    "https://scholar.google.com/citations?user=onGT9egAAAAJ",
     "https://www.linkedin.com/in/mohsen-asghari-ilani",
     "https://github.com/Mohsena1990"
   ]
