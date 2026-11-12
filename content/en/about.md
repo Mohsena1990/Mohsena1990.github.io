@@ -3,47 +3,37 @@ title: "About"
 type: "homepage"
 featured_image: "/images/mohsen-asghari-ilani-profile.jpg"
 intro: >-
-  **Head of Technology in AI**. I own technology direction and delivery for secure, compliant LLM agents. I started in **structural engineering** in Chile, moved into **software and automation** in construction and BIM, then into **AI/ML and LLM-based products**. Today I'm **Head of Technology** at <a href="https://fireraven.ai" target="_blank" rel="noopener noreferrer"><strong>Fireraven</strong></a>, leading **FireGuard** and **RedRaven**: architecture, roadmap, and hands-on shipping of policy guardrails, runtime enforcement, and red-teaming so enterprises can adopt agents safely. I've led complex, cross-disciplinary work from R&D through delivery, including the **Academic Excellence Scholarship** (Air Canada, Collège LaSalle Montréal, 2025) for AI/ML studies.
+  **Data scientist and researcher** working on **machine learning for socio-economic, energy and environmental risk**. I am a **PhD researcher** at <a href="https://www.swansea.ac.uk" target="_blank" rel="noopener noreferrer"><strong>Swansea University</strong></a>, funded by **ESRC/UKRI** through the **Wales Graduate School for the Social Sciences (WGSSS)**, and a **Senior Data Scientist at Dotin**. My research asks practical questions with real consequences, such as *who becomes fuel vulnerable, and when?*, and answers them with predictive models that are rigorous, interpretable and useful for decision-making.
 
 study: >-
-  Based in **Montréal**, I continue to deepen **AI and machine learning** at **Collège LaSalle** (Python, PyTorch, predictive modeling), complementing my day-to-day work leading **LLM agent security, guardrails, and platform delivery** at Fireraven.
+  I started out as a **mechanical engineer**, with a BSc from Islamic Azad University and an MSc from the <a href="https://ut.ac.ir/en" target="_blank" rel="noopener noreferrer">University of Tehran</a>, followed by three years in R&D at **Iran Khodro**. Since 2019 I have worked as an independent researcher in **machine learning**, and I now combine that background with social research training at Swansea, where I completed an **MSc in Social Research with Distinction**.
 
 passion_title: "What I focus on"
 passion_text: >-
-  As a **hands-on Head of Technology**, I bridge **CEO and product vision** with **AI systems engineering**. I set technology direction and still ship: designing and delivering capabilities that balance security, compliance, and user experience, helping organizations adopt **LLM agents** in a way that is **secure, auditable, and aligned with business goals**. At <a href="https://fireraven.ai" target="_blank" rel="noopener noreferrer"><strong>Fireraven</strong></a>, that means owning FireGuard and RedRaven delivery with product, security, and customers (policies, runtime controls, and compliance evidence), built with **Python (FastAPI)**, **Next.js/TypeScript**, and **PostgreSQL**. Previously at <a href="https://obralink.com" target="_blank" rel="noopener noreferrer"><strong>ObraLink</strong></a>, I led **autonomous structural analysis** and **ML** for concrete estimation, translating engineering needs into shipped product.
+  I build **forecasting and early-warning models for risk**: household **fuel and energy vulnerability** in the UK, **greenhouse-gas emissions** and electricity-grid signals, **groundwater irrigation risk** under salinity–sodicity stress, and **energy consumption** prediction. I also work on **deep learning for imaging**, including MRI-based brain tumour classification and SAR flood segmentation. My work has appeared in *Risk Analysis*, *Journal of Environmental Management*, *Energy and AI*, *Scientific Reports* and *IEEE Geoscience and Remote Sensing Letters*.
 
 mix: >-
-  My path from **structural engineering** to **tech leadership in AI** means I connect **disciplined systems thinking** with **software delivery**: from physical structures and BIM to **policy-driven AI** and enterprise tooling. I focus on **practical outcomes**: clear priorities, measurable impact, and reliable systems.
+  An engineering background taught me to care about **how models behave under stress**, not just about headline accuracy. I like to audit apparent machine-learning gains carefully, combine tabular, spatial and time-series data, and translate results into findings that policymakers and practitioners can act on. I work mainly in **Python** (PyTorch, TensorFlow, scikit-learn, Pandas), as well as **R**, **MATLAB** and **SQL**.
 
 personal: >-
-  Outside work, I enjoy **tennis**, **cooking**, **drums**, **swimming**, and **photography**. I **volunteer at LaSalle College**, helping new students settle in and supporting the academic community.
+  I live in **Cardiff**. In 2025 I was part of the team that won **1st place in the RoboCup 2025 Rescue Agent Simulation League** in Brazil, building agents that coordinate disaster-response simulations.
 
 quickfacts:
   - icon: "briefcase"
-    title: "Current Role"
-    value: "Head of Technology at <a href=\"https://fireraven.ai\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Fireraven</strong></a>"
+    title: "Current Roles"
+    value: "🎓 PhD Researcher, <a href=\"https://www.swansea.ac.uk\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Swansea University</strong></a> (ESRC/UKRI)<br>📊 Senior Data Scientist, **Dotin**"
   - icon: "graduation-cap"
     title: "Education"
-    value: "🏗️ <a href=\"https://uchile.cl/\" target=\"_blank\" rel=\"noopener noreferrer\">University of Chile</a>, **Bachelor's Degree in Civil Engineering**<br>🤖 <a href=\"https://lasallecollege.lcieducation.com/en\" target=\"_blank\" rel=\"noopener noreferrer\">Collège LaSalle Montréal</a>, **AEC: Artificial Intelligence and Machine Learning**"
+    value: "🎓 <a href=\"https://www.swansea.ac.uk\" target=\"_blank\" rel=\"noopener noreferrer\">Swansea University</a>, **MSc in Social Research** (Distinction)<br>⚙️ <a href=\"https://ut.ac.ir/en\" target=\"_blank\" rel=\"noopener noreferrer\">University of Tehran</a>, **MSc in Mechanical Engineering**<br>⚙️ Islamic Azad University, **BSc in Mechanical Engineering**"
   - icon: "award"
     title: "Recent Achievement"
-    value: "🏆 Recipient of the <a href=\"/blog/academic-excellence-recognition/\" target=\"_blank\" rel=\"noopener\">Academic Excellence Scholarship</a> 🎓 sponsored by ✈️ Air Canada at Collège LaSalle Montréal (2025) 🎉"
+    value: "🏆 **1st Place**, RoboCup 2025 Rescue Agent Simulation League (Brazil)"
+  - icon: "book"
+    title: "Publications"
+    value: "📄 Peer-reviewed work in *Risk Analysis*, *Journal of Environmental Management*, *Energy and AI*, *Scientific Reports* and *IEEE GRSL*"
   - icon: "language"
     title: "Languages"
     value: |
-      - 🇬🇧 English (IELTS C1)
-      - 🇨🇱 Spanish (Native)
-      - 🇫🇷 French (TCF B2)
-  - icon: "heart"
-    title: "Interests"
-    value: |
-      - ♟️ Chess
-      - 🎾 Tennis
-      - 🚴 Cycling
-      - 🏊‍♂️ Swimming
-      - 👨‍🍳 Cooking
-      - 🥁 Drumming
-      - 📸 Photography
-      - ✈️ Traveling
-      - 📚 Reading
+      - 🇬🇧 English (Professional)
+      - 🇮🇷 Persian / Farsi (Native)
 ---
