@@ -1,0 +1,11 @@
+{{- /* Buttons for slides, poster, video and paper. Context: the talk page. */ -}}
+{{- $btn := "inline-flex items-center px-4 py-2 rounded-lg text-sm font-semibold border border-primary text-primary dark:text-white dark:border-primary-light hover:bg-primary hover:text-white transition-colors duration-300" -}}
+{{- if or .Params.slides .Params.slides_embed .Params.poster .Params.video .Params.paper }}
+<div class="flex flex-wrap gap-2">
+  {{ with .Params.slides }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="{{ $btn }}"><i class="fas fa-file-powerpoint mr-2"></i>Slides</a>
+  {{ else }}{{ with .Params.slides_embed }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="{{ $btn }}"><i class="fas fa-file-powerpoint mr-2"></i>Slides</a>{{ end }}{{ end }}
+  {{ with .Params.poster }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="{{ $btn }}"><i class="fas fa-image mr-2"></i>Poster</a>{{ end }}
+  {{ with .Params.video }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="{{ $btn }}"><i class="fas fa-video mr-2"></i>Video</a>{{ end }}
+  {{ with .Params.paper }}<a href="{{ . }}" class="{{ $btn }}"><i class="fas fa-file-alt mr-2"></i>Paper</a>{{ end }}
+</div>
+{{- end }}

@@ -1,0 +1,48 @@
+{{ define "main" }}
+{{- $start := time.AsTime (.Params.event_date | default .Date) -}}
+{{- $isImage := `(?i)\.(png|jpe?g|webp|gif)$` -}}
+<section class="pt-8 pb-12 bg-bg dark:bg-bg">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <a href="{{ .Parent.RelPermalink }}" class="inline-flex items-center text-primary dark:text-primary-light text-sm font-medium mb-6 hover:underline"><i class="fas fa-arrow-left mr-2"></i>All talks</a>
+
+    <div class="flex flex-wrap items-center gap-3 mb-4 text-sm text-text-secondary dark:text-text-secondary">
+      <span class="inline-flex items-center bg-gradient-primary text-white px-3 py-1 rounded-full font-semibold">{{ .Params.talk_type | default "Talk" }}</span>
+      <span><i class="far fa-calendar mr-2"></i>{{ $start.Format "2 January 2006" }}{{ with .Params.end_date }}{{ $end := time.AsTime . }}{{ if ne ($end.Format "2006-01-02") ($start.Format "2006-01-02") }} – {{ $end.Format "2 January 2006" }}{{ end }}{{ end }}</span>
+      {{ with .Params.location }}<span><i class="fas fa-map-marker-alt mr-2"></i>{{ . }}</span>{{ end }}
+    </div>
+
+    <h1 class="text-3xl font-bold mb-3 font-heading text-text-primary dark:text-text-primary">{{ .Title }}</h1>
+    {{ with .Params.event }}
+    <p class="text-lg text-primary dark:text-primary-light font-medium mb-2">
+      {{ if $.Params.event_url }}<a href="{{ $.Params.event_url }}" target="_blank" rel="noopener noreferrer" class="hover:underline">{{ . }} <i class="fas fa-external-link-alt text-xs ml-1"></i></a>{{ else }}{{ . }}{{ end }}
+    </p>
+    {{ end }}
+    {{ with .Params.authors }}<p class="text-text-secondary dark:text-text-secondary mb-6">{{ . | markdownify }}</p>{{ end }}
+
+    <div class="mb-8">{{ partial "talk-buttons.html" . }}</div>
+
+    {{ with .Content }}
+    <div class="prose prose-lg markdown-content dark:prose-invert prose-gray max-w-none mb-10">{{ . }}</div>
+    {{ end }}
+
+    {{ with .Params.slides_embed }}
+    <h2 class="text-2xl font-bold mb-4 font-heading text-text-primary dark:text-text-primary">Slides</h2>
+    <div class="relative w-full mb-10 rounded-xl overflow-hidden border border-border-primary" style="padding-top: 59.3%;">
+      <iframe src="{{ . }}" title="Slides" class="absolute inset-0 w-full h-full" loading="lazy" allowfullscreen></iframe>
+    </div>
+    {{ else }}{{ with .Params.slides }}{{ if strings.HasSuffix (lower .) ".pdf" }}
+    <h2 class="text-2xl font-bold mb-4 font-heading text-text-primary dark:text-text-primary">Slides</h2>
+    <iframe src="{{ . }}#view=FitH" title="Slides" class="w-full rounded-xl border border-border-primary mb-10" style="height: 75vh;" loading="lazy"></iframe>
+    {{ end }}{{ end }}{{ end }}
+
+    {{ with .Params.poster }}
+    <h2 class="text-2xl font-bold mb-4 font-heading text-text-primary dark:text-text-primary">Poster</h2>
+    {{ if findRE $isImage . }}
+    <a href="{{ . }}" target="_blank" rel="noopener noreferrer"><img src="{{ . }}" alt="Poster: {{ $.Title }}" class="w-full rounded-xl border border-border-primary shadow-md mb-10" loading="lazy"></a>
+    {{ else }}
+    <iframe src="{{ . }}#view=FitH" title="Poster" class="w-full rounded-xl border border-border-primary mb-10" style="height: 85vh;" loading="lazy"></iframe>
+    {{ end }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}

@@ -33,3 +33,13 @@ name = "Research"
 url = "/research/"
 weight = 50
 
+
+[[main]]
+name = "Talks"
+url = "/talks/"
+weight = 52
+
+[[main]]
+name = "Projects"
+url = "/projects/"
+weight = 54

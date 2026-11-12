@@ -13,7 +13,21 @@ Built with [Hugo](https://gohugo.io/) and the [CareerCanvas](https://github.com/
 | About, Skills, Experience, Tech Stack, Contact | `content/en/*.md` |
 | Publications | `content/en/research/` |
 | Blog posts | `content/en/blog/` |
+| Talks & posters | `content/en/talks/` (slides/posters in `static/files/talks/`) |
+| Projects | `content/en/projects/` |
 | Profile photo, CV | `static/images/`, `static/files/` |
+
+## Add a talk or poster
+
+1. Put the slides and/or poster (PDF, PNG or JPG) in `static/files/talks/`.
+2. Copy `content/en/talks/example-talk.md` to a new file, e.g. `content/en/talks/2027-iaee-cardiff.md`.
+3. Fill in the fields, link files as `/files/talks/<file name>`, and change `draft: true` to `draft: false`.
+
+Talks dated today or later appear under **Upcoming**; the site rebuilds daily, so they move to **Past** on their own.
+
+## Add a project
+
+Copy `content/en/projects/example-project.md`, fill it in, set `status` to `planned`, `in progress` or `completed`, and change `draft: true` to `draft: false`.
 
 ## Run locally
 

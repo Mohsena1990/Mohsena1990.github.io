@@ -1,0 +1,41 @@
+{{ define "main" }}
+<section class="pt-8 pb-12 bg-bg dark:bg-bg">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-3xl font-bold text-center mb-8 font-heading text-text-primary dark:text-text-primary">{{ .Title }}</h1>
+    {{ with .Content }}<div class="prose prose-lg markdown-content dark:prose-invert prose-gray max-w-none mb-12">{{ . }}</div>{{ end }}
+
+    {{- /* A talk is "upcoming" until its last day has passed (the site rebuilds daily). */ -}}
+    {{ $today := now.Format "2006-01-02" }}
+    {{ $upcoming := slice }}{{ $past := slice }}
+    {{ range .Pages }}
+      {{ $start := (time.AsTime (.Params.event_date | default .Date)).Format "2006-01-02" }}
+      {{ $last := $start }}{{ with .Params.end_date }}{{ $last = (time.AsTime .).Format "2006-01-02" }}{{ end }}
+      {{ if ge $last $today }}{{ $upcoming = $upcoming | append (dict "d" $start "p" .) }}{{ else }}{{ $past = $past | append (dict "d" $start "p" .) }}{{ end }}
+    {{ end }}
+
+    {{ if $upcoming }}
+    <h2 class="text-2xl font-bold mb-6 font-heading text-text-primary dark:text-text-primary flex items-center"><i class="fas fa-calendar-plus mr-3 text-primary dark:text-primary-light"></i>Upcoming</h2>
+    <div class="space-y-6 mb-12">
+      {{ range sort $upcoming "d" "asc" }}{{ partial "talk-card.html" .p }}{{ end }}
+    </div>
+    {{ end }}
+
+    {{ if $past }}
+    <h2 class="text-2xl font-bold mb-6 font-heading text-text-primary dark:text-text-primary flex items-center"><i class="fas fa-history mr-3 text-primary dark:text-primary-light"></i>Past talks &amp; posters</h2>
+    <div class="space-y-6">
+      {{ range sort $past "d" "desc" }}{{ partial "talk-card.html" .p }}{{ end }}
+    </div>
+    {{ end }}
+
+    {{ if not .Pages }}
+    <div class="text-center py-12">
+      <div class="bg-bg-secondary dark:bg-bg-tertiary rounded-xl p-8 max-w-md mx-auto border border-border-primary">
+        <i class="fas fa-microphone text-4xl text-primary dark:text-primary-light mb-4"></i>
+        <h3 class="text-lg font-semibold text-text-primary dark:text-text-primary mb-2">Talks coming soon</h3>
+        <p class="text-text-secondary dark:text-text-secondary text-sm">Conference talks, posters and slides will be listed here.</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

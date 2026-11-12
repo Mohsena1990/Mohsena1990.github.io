@@ -1,0 +1,6 @@
+{{- $btn := "inline-flex items-center px-4 py-2 rounded-lg text-sm font-semibold border border-primary text-primary dark:text-white dark:border-primary-light hover:bg-primary hover:text-white transition-colors duration-300" -}}
+{{- with .Params.links }}
+<div class="flex flex-wrap gap-2">
+  {{ range . }}<a href="{{ .url }}" {{ if hasPrefix .url "http" }}target="_blank" rel="noopener noreferrer"{{ end }} class="{{ $btn }}"><i class="fas fa-{{ .icon | default "link" }} mr-2"></i>{{ .label }}</a>{{ end }}
+</div>
+{{- end }}

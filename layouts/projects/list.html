@@ -1,0 +1,53 @@
+{{ define "main" }}
+<section class="pt-8 pb-12 bg-bg dark:bg-bg">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-3xl font-bold text-center mb-8 font-heading text-text-primary dark:text-text-primary">{{ .Title }}</h1>
+    {{ with .Content }}<div class="prose prose-lg markdown-content dark:prose-invert prose-gray max-w-none mb-12">{{ . }}</div>{{ end }}
+
+    {{ $groups := slice
+      (dict "title" "In progress" "icon" "spinner" "keys" (slice "in progress" "ongoing" "active" "current"))
+      (dict "title" "Upcoming" "icon" "hourglass-start" "keys" (slice "planned" "upcoming" "future" "proposed"))
+      (dict "title" "Completed" "icon" "check-circle" "keys" (slice "completed" "complete" "done" "finished"))
+    }}
+    {{ $pages := .Pages }}
+    {{ range $groups }}
+      {{ $g := . }}
+      {{ $items := slice }}
+      {{ range $pages.ByWeight }}{{ if in $g.keys (lower (.Params.status | default "planned")) }}{{ $items = $items | append . }}{{ end }}{{ end }}
+      {{ if $items }}
+      <h2 class="text-2xl font-bold mb-6 font-heading text-text-primary dark:text-text-primary flex items-center"><i class="fas fa-{{ $g.icon }} mr-3 text-primary dark:text-primary-light"></i>{{ $g.title }}</h2>
+      <div class="grid gap-6 md:grid-cols-2 mb-12">
+        {{ range $items }}
+        <article class="bg-bg-secondary dark:bg-bg-tertiary rounded-xl p-6 shadow-md border border-border-primary dark:border-border-primary flex flex-col">
+          <div class="mb-3">{{ partial "project-meta.html" . }}</div>
+          <h3 class="text-xl font-semibold mb-2 text-text-primary dark:text-text-primary">
+            {{ if .Content }}<a href="{{ .RelPermalink }}" class="hover:text-primary dark:hover:text-primary-light transition-colors duration-300">{{ .Title }}</a>{{ else }}{{ .Title }}{{ end }}
+          </h3>
+          {{ with .Description }}<p class="text-text-secondary dark:text-text-secondary leading-relaxed mb-4">{{ . }}</p>{{ end }}
+          {{ with .Params.collaborators }}<p class="text-sm text-text-secondary dark:text-text-secondary mb-4"><i class="fas fa-users mr-2"></i>{{ delimit . ", " }}</p>{{ end }}
+          {{ with .Params.tags }}
+          <div class="flex flex-wrap gap-2 mb-4">
+            {{ range . }}<span class="bg-gradient-to-r from-primary-lighter to-primary-light dark:from-primary-dark dark:to-primary text-text-primary px-3 py-1 rounded-full text-xs font-medium border border-primary-light dark:border-primary">{{ . }}</span>{{ end }}
+          </div>
+          {{ end }}
+          <div class="mt-auto">
+            {{ partial "project-links.html" . }}
+            {{ if .Content }}<a href="{{ .RelPermalink }}" class="inline-flex items-center mt-3 text-primary dark:text-primary-light text-sm font-medium hover:underline">Read more<i class="fas fa-chevron-right ml-2"></i></a>{{ end }}
+          </div>
+        </article>
+        {{ end }}
+      </div>
+      {{ end }}
+    {{ end }}
+
+    {{ if not .Pages }}
+    <div class="text-center py-12">
+      <div class="bg-bg-secondary dark:bg-bg-tertiary rounded-xl p-8 max-w-md mx-auto border border-border-primary">
+        <i class="fas fa-flask text-4xl text-primary dark:text-primary-light mb-4"></i>
+        <h3 class="text-lg font-semibold text-text-primary dark:text-text-primary mb-2">Projects coming soon</h3>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

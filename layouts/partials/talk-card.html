@@ -1,0 +1,33 @@
+{{- /* One talk/poster card. Context: the talk page. */ -}}
+{{- $p := . -}}
+{{- $type := .Params.talk_type | default "Talk" -}}
+{{- $icon := "microphone" -}}
+{{- if eq (lower $type) "poster" }}{{ $icon = "image" }}{{ else if in (lower $type) "keynote" }}{{ $icon = "star" }}{{ else if in (lower $type) "invited" }}{{ $icon = "user-tie" }}{{ else if in (lower $type) "workshop" }}{{ $icon = "chalkboard-teacher" }}{{ end -}}
+{{- $start := time.AsTime (.Params.event_date | default .Date) -}}
+<article class="bg-bg-secondary dark:bg-bg-tertiary rounded-xl p-6 shadow-md border border-border-primary dark:border-border-primary">
+  <div class="flex flex-wrap items-center gap-2 mb-3 text-sm">
+    <span class="inline-flex items-center bg-gradient-primary text-white px-3 py-1 rounded-full font-semibold">
+      <i class="fas fa-{{ $icon }} mr-2"></i>{{ $type }}
+    </span>
+    <span class="inline-flex items-center text-text-secondary dark:text-text-secondary">
+      <i class="far fa-calendar mr-2"></i>{{ $start.Format "2 January 2006" }}{{ with .Params.end_date }}{{ $end := time.AsTime . }}{{ if ne ($end.Format "2006-01-02") ($start.Format "2006-01-02") }} – {{ $end.Format "2 January 2006" }}{{ end }}{{ end }}
+    </span>
+    {{ with .Params.location }}
+    <span class="inline-flex items-center text-text-secondary dark:text-text-secondary">
+      <i class="fas fa-map-marker-alt mr-2"></i>{{ . }}
+    </span>
+    {{ end }}
+  </div>
+
+  <h3 class="text-xl font-semibold mb-1 text-text-primary dark:text-text-primary">
+    <a href="{{ .RelPermalink }}" class="hover:text-primary dark:hover:text-primary-light transition-colors duration-300">{{ .Title }}</a>
+  </h3>
+  {{ with .Params.event }}
+  <p class="text-primary dark:text-primary-light font-medium mb-3">
+    {{ if $p.Params.event_url }}<a href="{{ $p.Params.event_url }}" target="_blank" rel="noopener noreferrer" class="hover:underline">{{ . }} <i class="fas fa-external-link-alt text-xs ml-1"></i></a>{{ else }}{{ . }}{{ end }}
+  </p>
+  {{ end }}
+  {{ with .Description }}<p class="text-text-secondary dark:text-text-secondary leading-relaxed mb-4">{{ . }}</p>{{ end }}
+
+  {{ partial "talk-buttons.html" . }}
+</article>

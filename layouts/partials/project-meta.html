@@ -1,0 +1,10 @@
+{{- /* Status badge + period. Context: the project page. */ -}}
+{{- $s := lower (.Params.status | default "planned") -}}
+{{- $label := "Upcoming" }}{{ $icon := "hourglass-start" }}{{ $cls := "bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-100" -}}
+{{- if in (slice "in progress" "ongoing" "active" "current") $s }}{{ $label = "In progress" }}{{ $icon = "spinner" }}{{ $cls = "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-100" }}
+{{- else if in (slice "completed" "complete" "done" "finished") $s }}{{ $label = "Completed" }}{{ $icon = "check-circle" }}{{ $cls = "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-100" }}{{ end -}}
+<div class="flex flex-wrap items-center gap-3 text-sm">
+  <span class="inline-flex items-center px-3 py-1 rounded-full font-semibold {{ $cls }}"><i class="fas fa-{{ $icon }} mr-2"></i>{{ $label }}</span>
+  {{ with .Params.period }}<span class="text-text-secondary dark:text-text-secondary"><i class="far fa-calendar mr-2"></i>{{ . }}</span>{{ end }}
+  {{ with .Params.funding }}<span class="text-text-secondary dark:text-text-secondary"><i class="fas fa-hand-holding-usd mr-2"></i>{{ . }}</span>{{ end }}
+</div>
