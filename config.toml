@@ -58,7 +58,7 @@ home_title = "Mohsen Asghari Ilani | PhD Researcher, Swansea University"
 og_image_width = 800
 og_image_height = 800
 # Paste the code from Google Search Console (HTML tag method) here
-google_site_verification = ""
+google_site_verification = "XYhisYGovLt6JwWnd4hcwC5N80ip4aSAP9vi1q4K59k"
 
 [params.seo]
   jobTitle = "PhD Researcher and Senior Data Scientist"
