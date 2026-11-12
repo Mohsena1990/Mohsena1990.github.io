@@ -21,3 +21,6 @@ desktop.ini
 .hugo_build.lock
 .env.*
 config.local.toml
+
+# Keynote originals (publish PDF/PPTX exports instead)
+*.key
