@@ -1,5 +1,5 @@
 # Hugo Site Configuration
-baseURL = "https://mohsena1990.github.io/mohsen.asghari.ilani.github.io/"
+baseURL = "https://mohsena1990.github.io/"
 languageCode = "en-gb"
 title = "Mohsen Asghari Ilani"
 theme = "careercanvas"
